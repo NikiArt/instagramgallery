@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Галлерея инстаграма</string>
+    <string name="favourites">Избранное</string>
+    <string name="gallery">Вся галлерея</string>
+</resources>

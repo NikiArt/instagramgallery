@@ -1,7 +1,7 @@
 <resources>
-    <string name="app_name">Gallery for Instagram</string>
-    <string name="gallery">Gallery</string>
-    <string name="favourites">Favourites</string>
+    <string name="app_name">giphygallery</string>
+    <string name="title_home">Giphy gallery</string>
+    <string name="title_dashboard">Favourites</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

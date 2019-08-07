@@ -41,4 +41,25 @@ public class DataGetter {
             }
         });
     }
+
+    public List<String> getImgArray(String request) {
+        imageUrls.clear();
+        Call<ResponseGiphy> call = App.getApi().getGiphies(API_KEY, request);
+        call.enqueue(new Callback<ResponseGiphy>() {
+            @Override
+            public void onResponse(Call<ResponseGiphy> call, Response<ResponseGiphy> response) {
+                if (response.body() != null) {
+                    for (DataGiphy dataImg : response.body().getData()) {
+                        imageUrls.add(dataImg.getImages().getFixedHeight().getUrl());
+                    }
+                }
+            }
+
+            @Override
+            public void onFailure(Call<ResponseGiphy> call, Throwable t) {
+                Log.d("DDLog", "failure - " + t);
+            }
+        });
+        return imageUrls;
+    }
 }

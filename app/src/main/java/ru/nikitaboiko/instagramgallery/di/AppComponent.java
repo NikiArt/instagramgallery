@@ -11,7 +11,8 @@ import ru.nikitaboiko.instagramgallery.presenters.MainPresenter;
 @Component(modules = {
         ApiModule.class,
         AppModule.class,
-        AdapterModule.class
+        AdapterModule.class,
+        CacheModule.class
 })
 
 public interface AppComponent {
